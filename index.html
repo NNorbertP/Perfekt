@@ -119,12 +119,17 @@
 
         .nav-link {
             text-align: center;
+            margin-right: 25px;
         }
 
         .navbar-collapse {
             margin-right: 0px;
         }
 
+        .navbar-toggler{
+            border-color: #fff;
+            filter: invert(1);
+        }
 
         /* menü vége */
 
@@ -134,10 +139,13 @@
             margin-bottom: 0px;
         }
 
-        #kepzesId .row .col-sm-4,
-        .zoldhatter.zoldhatter2 .row .col-sm-4 {
+        #kepzesId .row .col-md-4,
+        .zoldhatter.zoldhatter2 .row .col-md-4 {
             margin-top: 30px;
             margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
 
@@ -298,6 +306,10 @@
             background-color: transparent;
             border: none;
             text-align: center;
+            max-width: 400px;
+            min-width: 210px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .card img {
@@ -517,8 +529,8 @@
                 text-align: center;
             }
 
-            #kepzesId .row .col-sm-4,
-            .zoldhatter.zoldhatter2 .row .col-sm-4 {
+            #kepzesId .row .col-md-4,
+            .zoldhatter.zoldhatter2 .row .col-md-4 {
                 margin-top: 20px;
                 margin-bottom: 30px;
             }
@@ -529,9 +541,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-light fixed-top" style="background-color: #007272;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #007272;">
         <div class="container-fluid" style="padding-left: 0px;">
-            <a class="navbar-brand" href="#sliderId" style="margin-right: -20px;"><img src="kepek/logo1.png" alt="logo"
+            <a class="navbar-brand" href="#sliderId" style="margin-right: -120px;"><img src="kepek/logo1.png" alt="logo"
                     style="height: 70px; width: auto;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
                 aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
@@ -539,11 +551,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-md-end" id="navbarID">
                 <div class="navbar-nav">
-                    <a class="nav-link active mr-4 lm-3" aria-current="page" href="#kepzesId">Képzés</a>
-                    <a class="nav-link mr-4 lm-3" aria-current="page" href="#perfektId">Perfekt</a>
-                    <a class="nav-link mr-4 lm-3" aria-current="page" href="#eredmenyId">Eredmény</a>
-                    <a class="nav-link mr-4 lm-3" aria-current="page" href="#gyikId">GYIK</a>
-                    <a class="nav-link mr-5 lm-3" aria-current="page"
+                    <a class="nav-link active lm-3" aria-current="page" href="#kepzesId">Képzés</a>
+                    <a class="nav-link lm-3" aria-current="page" href="#eredmenyId">Eredmény</a>
+                    <a class="nav-link lm-3" aria-current="page" href="#gyikId">GYIK</a>
+                    <a class="nav-link lm-3" aria-current="page" href="#perfektId">Perfekt</a>
+                    <a class="nav-link lm-3" aria-current="page"
                         href="https://www.perfekt.hu/webdesigner-tanfolyam-hu" target="_blank">Kapcsolat</a>
 
                 </div>
@@ -562,7 +574,7 @@
         <div class="content" id="kepzesId">
             <h2 data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">A képzésről röviden</h2>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="card" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/fo1.png" alt="Card image" style="width:70%">
                         <div class="card-body">
@@ -572,7 +584,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/fo2.png" alt="Card image" style="width:70%">
                         <div class="card-body">
@@ -582,7 +594,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="card" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/fo3.png" alt="Card image" style="width:70%">
                         <div class="card-body">
@@ -607,25 +619,25 @@
         <h2 data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Pontosan mit is foglal magában?</h2>
 
         <div class="row reszletek">
-            <div class="col-sm-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                 <h3>Színtan</h3>
                 <p>Betekintést nyerhetsz a színek mögötti pszichológiába, megismerkedhetsz a különböző színharmóniákkal,
                     a különböző színterekkel, valamint számos eszközt mutatunk színpaletták hatékony összeállításához
                 </p>
             </div>
-            <div class="col-sm-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000"
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000"
                 style="align-items: center; display: flex;">
                 <img class="alapKep" src="kepek/szintan.png" alt=""
                     style="height: 250px; width: auto; margin-left: auto; margin-right: auto;">
             </div>
         </div>
         <div class="row reszletek">
-            <div class="col-sm-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                 <img class="alapKep" src="kepek/tipografia.png" alt=""
                     style="height: 300px; width: auto; margin-left: auto; margin-right: auto;">
             </div>
-            <div class="col-sm-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
-                <h3>Tiporáfia</h3>
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                <h3>Tipográfia</h3>
                 <p>Megismerkedhetsz a tipográfia alapjaival, a tananyagegység fő része énnek gyakorlati felhasználásával
                     foglalkozik, megmutatjuk mire érdemes figyelni, hogyan válassz betűtípusokat, és méreteket, ezekre
                     kiváló eszközöket.
@@ -640,7 +652,7 @@
     <div class="zoldhatter zoldhatter2">
         <div class="content">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="card" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/layout.png" alt="Card image" style="width:70%;">
                         <div class="card-body">
@@ -652,7 +664,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/gyorsasag.png" alt="Card image" style="width:70%;">
                         <div class="card-body">
@@ -664,7 +676,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="card" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/epitoelemek.png" alt="Card image" style="width:70%;">
                         <div class="card-body">
@@ -681,7 +693,7 @@
     </div>
     <div class="content">
         <div class="row reszletek">
-            <div class="col-sm-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                 <h3>Képek, Képszerkesztés</h3>
                 <p>
                     Átvesszük a pixeles és vektoros képalkotás mögötti elméletet, valamint számos képforrást kínálunk,
@@ -692,17 +704,17 @@
                     ezeket hogy érdemes felhasználni weboldalakon, hogy ne legyen túl hosszú a betöltési idő.
                 </p>
             </div>
-            <div class="col-sm-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                 <img class="alapKep" src="kepek/kepek.png" alt=""
                     style="height: 340px; width: auto; margin-left: auto; margin-right: auto;">
             </div>
         </div>
         <div class="row reszletek">
-            <div class="col-sm-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                 <img class="alapKep" src="kepek/egyediseg.png" alt=""
                     style="height: 340px; width: auto; margin-left: auto; margin-right: auto;">
             </div>
-            <div class="col-sm-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                 <h3>Egyediség</h3>
                 <p>
                     Megtanítjuk hogyan tudod egy-egy célközönségre szabni a weboldalt, hogy a lehető legeredményesebb legyen
@@ -716,7 +728,7 @@
     <div class="zoldhatter zoldhatter2">
         <div class="content">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="card" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/elemzes.png" alt="Card image" style="width:70%">
                         <div class="card-body">
@@ -727,7 +739,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/ingyenes.png" alt="Card image" style="width:70%">
                         <div class="card-body">
@@ -738,7 +750,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="card" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/domain.png" alt="Card image" style="width:70%">
                         <div class="card-body">
@@ -754,23 +766,23 @@
 
     <div class="content mb-5">
         <div class="row reszletek">
-            <div class="col-sm-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                 <h3>Ötlettől élesítésig</h3>
                 <p>Lépésről lépésre megmutatjuk a reszponzív, modern weboldalak készítésének folyamatát.
                 </p>
             </div>
-            <div class="col-sm-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000"
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000"
                 style="align-items: center; display: flex;">
                 <img class="alapKep" src="kepek/otlet.png" alt=""
                     style="height: 300px; width: auto; margin-left: auto; margin-right: auto;">
             </div>
         </div>
         <div class="row reszletek">
-            <div class="col-sm-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                 <img class="alapKep" src="kepek/tartalom.png" alt=""
                     style="height: 300px; width: auto; margin-left: auto; margin-right: auto;">
             </div>
-            <div class="col-sm-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                 <h3>Tartalom beágyazása</h3>
                 <p>Megtanulhatod hogy lehet képeket, videókat, térképet beágyazni a honlapba, hogy jobban megfogd a
                     felhasználókat.
@@ -785,7 +797,7 @@
             <div class="row reszletek" id="eredmenyId">
                 <h2 data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
                     style="margin-bottom: 20px; margin-top: 50px; color: #f3fbfb;">A képzés végére</h2>
-                <div class="col-sm-8" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                <div class="col-md-8" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                     <ul class="icon-list" style="text-align: left;">
                         <li>Képes leszel professzinális weboldalak lérehozására</li>
                         <li>Megalapozott döntéseket tudsz hozni a dizájn kialakításakor, mivel ismerni fogod a mögöttes
@@ -799,7 +811,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-4" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000"
+                <div class="col-md-4" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000"
                     style="align-items: center; display: flex; background-color: #f3fbfb;">
                     <img class="alapKep" src="kepek/siker.png" alt=""
                         style="height: 320px; width: auto; margin-left: auto; margin-right: auto;">
@@ -952,7 +964,7 @@
             data-aos-duration="1000">Vállalat bemutatás elérhetőségekkel</h3>
         -->
         <div class="row">
-            <div class="col-sm-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                 <h4 class="mt-3 mb-4">Perfekt Zrt.</h4>
                 <p><img src="kepek/location.svg" alt="locationikon"
                         style="height: 20px; width: auto; padding-bottom: 4px; padding-right: 2px;"> Budapest, Számadó
@@ -968,7 +980,7 @@
                     kihívásaira, együtt haladva az online és digitális tanulási trendekkel.
                 </p>
             </div>
-            <div class="col-sm-6 terkep" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+            <div class="col-md-6 terkep mt-3" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.1885790211786!2d19.035465777652103!3d47.486239571178935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc4384fd9a47%3A0x11ab30b46870d00b!2zUGVyZmVrdCBLw7Z6cG9udCDigJMgUGVyZmVrdCBHYXpkYXPDoWdpIFRhbsOhY3NhZMOzLCBPa3RhdMOzIMOpcyBLaWFkw7MgWnJ0Lg!5e0!3m2!1shu!2shu!4v1708547181455!5m2!1shu!2shu"
                     width="380" height="320" style="border:0;" allowfullscreen="" loading="lazy"
