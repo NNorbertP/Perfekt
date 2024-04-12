@@ -40,7 +40,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XSQFT3WD0S"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-XSQFT3WD0S');
@@ -73,7 +73,7 @@
 
 
         /* menü eleje */
-        .logoKep{
+        .logoKep {
             height: 70px;
             width: auto;
         }
@@ -140,7 +140,7 @@
             margin-right: 0px;
         }
 
-        .navbar-toggler{
+        .navbar-toggler {
             border-color: #fff;
             filter: invert(1);
         }
@@ -168,7 +168,7 @@
             text-align: center;
         }
 
-        #kepzesId h2{
+        #kepzesId h2 {
             margin-bottom: 15px;
         }
 
@@ -300,6 +300,97 @@
 
 
 
+        /* counter eleje */
+
+        .counterdiv {
+            margin-left: auto;
+            margin-right: auto;
+            align-self: center;
+        }
+
+        .counter_blokk {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            width: 220px;
+            height: auto;
+            text-align: center;
+        }
+
+        .counter {
+            font-size: 52px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .counter_szoveg {
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .counter_ikon_div {
+            height: 80px;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            display: flex;
+        }
+
+        .counter_ikon1,
+        .counter_ikon2 {
+            height: 60px;
+            width: auto;
+        }
+
+        .counter_ikon3 {
+            height: 50px;
+            width: auto;
+        }
+
+
+        /* counter vége */
+
+
+
+        /* typing */
+        .typing_div {
+            height: 40px !important;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+
+        #typing {
+            font-size: 28px;
+            font-weight: 500;
+            width: fit-content !important;
+            white-space: nowrap;
+            /* Megakadályozza a szöveg tördelését */
+            border-right: 2px solid;
+            /* Imitálja a kurzort */
+            overflow: hidden;
+            /* Biztosítja, hogy a szöveg ne lépje túl a konténer szélességét */
+            animation: blinkCursor 0.75s steps(40) infinite;
+            /* Kurzor villogó animáció */
+        }
+
+        @keyframes blinkCursor {
+            from {
+                border-right-color: black;
+            }
+
+            to {
+                border-right-color: transparent;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #typing {
+                font-size: 20px;
+            }
+        }
+
+
         /* térkép eleje */
 
         .terkep {
@@ -373,6 +464,8 @@
         .wrapper-animated-button1 {
             width: fit-content;
             height: auto;
+            margin-bottom: 20px !important;
+            
         }
 
         .animated-button1 {
@@ -380,6 +473,7 @@
             height: 70px;
             white-space: nowrap;
             padding: 0px 30px;
+            margin-bottom: 20px;
             background: linear-gradient(to left top, #008080 50%, #007272 50%);
             border-style: none;
             color: #fff;
@@ -392,6 +486,8 @@
             position: relative;
             overflow: hidden;
             box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+            box-shadow:  5px 5px 10px #d6dddd,
+             -5px -5px 10px #ffffff;
             transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 
         }
@@ -533,7 +629,38 @@
 
         /* footer vége */
 
+
+
+
+
+        /* neumorfizmus effektus eleje*/
+        /*
         
+        */
+
+        .neumorf1 {
+            box-shadow: 15px 15px 30px #005d5d,
+                -15px -15px 30px #008787 !important;
+            transition: all .5s ease-in-out !important;
+        }
+
+        .neumorf1:hover {
+            box-shadow: 15px 15px 30px #007171,
+                -15px -15px 30px #007373 !important;
+
+        }
+
+        /*
+        .zoldhatter{
+            box-shadow: 
+                inset 0 15px 15px -15px #000, 
+                inset 0 -15px 15px -15px #fff !important;
+        }
+        */
+
+
+        /* neumorfizmus effektus vége*/
+
 
         @media (max-width: 480px) {
             #sliderId {
@@ -554,13 +681,15 @@
                 margin-top: 20px;
                 margin-bottom: 30px;
             }
-            .logoKep{
+
+            .logoKep {
                 height: 60px;
                 width: auto;
             }
         }
+
         @media (max-width: 340px) {
-            .logoKep{
+            .logoKep {
                 height: 50px;
                 width: auto;
             }
@@ -573,7 +702,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #007272;">
         <div class="container-fluid" style="padding-left: 0px;">
-            <a class="navbar-brand" href="#sliderId" style="margin-right: -120px;"><img class="logoKep" src="kepek/logo1.png" alt="logo"></a>
+            <a class="navbar-brand" href="#sliderId" style="margin-right: -120px;"><img class="logoKep"
+                    src="kepek/logo1.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
                 aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -584,8 +714,8 @@
                     <a class="nav-link lm-3" aria-current="page" href="#eredmenyId">Eredmény</a>
                     <a class="nav-link lm-3" aria-current="page" href="#gyikId">GYIK</a>
                     <a class="nav-link lm-3" aria-current="page" href="#perfektId">Perfekt</a>
-                    <a class="nav-link lm-3" aria-current="page"
-                        href="https://perfekt.hu/webdesigner-tanfolyam/" target="_blank">Kapcsolat</a>
+                    <a class="nav-link lm-3" aria-current="page" href="https://perfekt.hu/webdesigner-tanfolyam/"
+                        target="_blank">Kapcsolat</a>
 
                 </div>
             </div>
@@ -599,12 +729,13 @@
         <div><img src="kepek/carousel4.png" alt="kep4" title="Heti konzultáció"></div>
     </section>
 
-    <div class="zoldhatter">
+    <div class="zoldhatter" style="display: flex; flex-wrap: wrap;">
         <div class="content" id="kepzesId">
-            <h2 data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">A képzésről röviden</h2>
+            <h2 data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" style="color: white;">A képzésről
+                röviden</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card neumorf1" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/fo1.png" alt="Card image" style="width:70%">
                         <div class="card-body">
                             <h4 class="card-title">Desgin elmélet</h4>
@@ -614,7 +745,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card neumorf1" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/fo2.png" alt="Card image" style="width:70%">
                         <div class="card-body">
                             <h4 class="card-title">UI/UX</h4>
@@ -624,7 +755,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card neumorf1" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/fo3.png" alt="Card image" style="width:70%">
                         <div class="card-body">
                             <h4 class="card-title">Webfejlesztés</h4>
@@ -635,6 +766,35 @@
                 </div>
             </div>
         </div>
+        <div class="content">
+            <div class="counterdiv" style="width: 100%; display: flex; flex-wrap: wrap;">
+                <div class="counter_blokk" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="counter_ikon_div"><img class="counter_ikon counter_ikon1"
+                            src="kepek/icons8-video-playlist-96_feher.png" alt="videoikon"></div>
+                    <div id="counter1" class="counter" data-target="57">0</div>
+                    <div>
+                        <p class="counter_szoveg">Óra videó</p>
+                    </div>
+                </div>
+                <div class="counter_blokk" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <div class="counter_ikon_div"><img class="counter_ikon counter_ikon2"
+                            src="kepek/icons8-book-96_feher.png" alt="konyvikon"></div>
+                    <div id="counter2" class="counter" data-target="15">0</div>
+                    <div>
+                        <p class="counter_szoveg">Fejezet</p>
+                    </div>
+                </div>
+                <div class="counter_blokk" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <div class="counter_ikon_div"><img class="counter_ikon counter_ikon3"
+                            src="kepek/icons8-external-link-96_feher.png" alt="videoikon"></div>
+                    <div id="counter3" class="counter" data-target="100">0</div>
+                    <div>
+                        <p class="counter_szoveg">Hasznos forrás</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 
@@ -645,7 +805,12 @@
         <div class="zoldhatter">
 
         </div>
-        <h2 data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Pontosan mit is foglal magában?</h2>
+        <!--<h2 data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Pontosan mit is foglal magában?</h2> -->
+        
+        <div class="typing_div" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+            <div id="typing"></div>
+        </div>
+
 
         <div class="row reszletek">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
@@ -676,13 +841,13 @@
                 </p>
             </div>
         </div>
-        
+
     </div>
     <div class="zoldhatter zoldhatter2">
         <div class="content">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card neumorf1" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/layout.png" alt="Card image" style="width:70%;">
                         <div class="card-body">
                             <h4 class="card-title">Layout</h4>
@@ -694,7 +859,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card neumorf1" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/gyorsasag.png" alt="Card image" style="width:70%;">
                         <div class="card-body">
                             <h4 class="card-title">Gyorsaság</h4>
@@ -706,7 +871,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card neumorf1" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/epitoelemek.png" alt="Card image" style="width:70%;">
                         <div class="card-body">
                             <h4 class="card-title">Építőelemek</h4>
@@ -746,19 +911,20 @@
             <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                 <h3>Egyediség</h3>
                 <p>
-                    Megtanítjuk hogyan tudod egy-egy célközönségre szabni a weboldalt, hogy a lehető legeredményesebb legyen
+                    Megtanítjuk hogyan tudod egy-egy célközönségre szabni a weboldalt, hogy a lehető legeredményesebb
+                    legyen
                 </p>
             </div>
-            
+
         </div>
     </div>
-    
+
 
     <div class="zoldhatter zoldhatter2">
-        <div class="content">
+        <div class="content" style="margin-bottom: 30px;">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card neumorf1" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/elemzes.png" alt="Card image" style="width:70%">
                         <div class="card-body">
                             <h4 class="card-title">Elemzés</h4>
@@ -769,7 +935,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card neumorf1" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/ingyenes.png" alt="Card image" style="width:70%">
                         <div class="card-body">
                             <h4 class="card-title">Ingyenes források</h4>
@@ -780,7 +946,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card neumorf1" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                         <img class="card-img-top" src="kepek/domain.png" alt="Card image" style="width:70%">
                         <div class="card-body">
                             <h4 class="card-title">Domain & hosting</h4>
@@ -828,16 +994,16 @@
                     style="margin-bottom: 20px; margin-top: 50px; color: #f3fbfb;">A képzés végére</h2>
                 <div class="col-md-8" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                     <ul class="icon-list" style="text-align: left;">
-                        <li>Képes leszel professzionális weboldalak lérehozására</li>
+                        <li>Képes leszel professzionális, gyors, egyedi megjelenésű weboldalak lérehozására</li>
                         <li>Megalapozott döntéseket tudsz hozni a dizájn kialakításakor, mivel ismerni fogod a mögöttes
                             elméletet</li>
                         <li>Megérted és képes leszel használni a HTML-t, CSS-t, a Bootstrap keretrendszert, valamint
                             számos
                             JavaScript funkciót</li>
                         <li>Képes leszel személyre szabott grafikai elemeket létrehozni vagy meglévőket kedved szerint
-                            módosítani</li>
-                        <li>Tudni fogod hogyan lehet gyors, felhasználóbarát oldalakat tervezni, egyedi megjelenéssel
-                        </li>
+                            módosítani, mivel részletesen ismerni fogod a Canva, Adobe Photoshop, Illustrator funkciókat, lehetőségeket</li>
+                        <li>Reszponzív UI/UX terveket, wireframe-eket, moodboard-okat tudsz készíteni a Figma segítségével</li>
+                        <li>Tesztelni és élesíteni tudod majd a weboldalad</li>
                     </ul>
                 </div>
                 <div class="col-md-4" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000"
@@ -853,8 +1019,7 @@
 
     <div class="wrapper-animated-button1 mt-5 mb-5 center" style="margin-left: auto; margin-right: auto;"
         data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-        <button class="animated-button1"
-            onclick="window.open('https://perfekt.hu/webdesigner-tanfolyam/', '_blank');">
+        <button class="animated-button1" onclick="window.open('https://perfekt.hu/webdesigner-tanfolyam/', '_blank');">
             Vissza a Perfekt oldalára
             <span></span>
             <span></span>
@@ -988,10 +1153,6 @@
     </div>
     </div>
     <div class="content" id="perfektId" style="margin-bottom: 80px;">
-        <!--  
-        <h3 class="mb-5 text-center" style="margin-top: 60px;" data-aos="fade-up" data-aos-delay="400"
-            data-aos-duration="1000">Vállalat bemutatás elérhetőségekkel</h3>
-        -->
         <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                 <h4 class="mt-3 mb-4">Perfekt Zrt.</h4>
@@ -1019,7 +1180,8 @@
     </div>
     <footer class="zoldhatter">
         <div class="row">
-            <img src="kepek/perfekt_legjobb_befektetés.png" alt="" style="height: 70px; width: auto; margin-left: auto; margin-right: auto;">
+            <img src="kepek/perfekt_legjobb_befektetés.png" alt=""
+                style="height: 70px; width: auto; margin-left: auto; margin-right: auto;">
         </div>
     </footer>
 
@@ -1112,6 +1274,184 @@
                 });
             });
         });
+
+
+
+
+        // counter - hozzá kell ezt adni a divhez: data-target="100"
+
+
+        function easeInOutCubic(t) {
+            return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        }
+
+
+        // 57-ig - counter1
+
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const counter = document.querySelector('#counter1');
+            const target = +counter.getAttribute('data-target');
+            const duration = 5000; // Az animáció teljes hossza milliszekundumban
+            let start = null;
+
+            const step = (timestamp) => {
+                if (!start) start = timestamp;
+                const elapsed = timestamp - start;
+                const progress = Math.min(elapsed / duration, 1); // Biztosítjuk, hogy a progress sose lépje túl az 1-et
+                const easedProgress = easeInOutCubic(progress); // Alkalmazzuk az easing függvényt
+
+                counter.innerText = Math.floor(target * easedProgress);
+
+                if (elapsed < duration) {
+                    requestAnimationFrame(step);
+                } else {
+                    counter.innerText = target; // A végén pontosan beállítjuk a célszámot
+                    setTimeout(() => {
+                        counter.innerText += "+";
+                    }, 1000);
+                }
+            };
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        requestAnimationFrame(step);
+                        observer.disconnect(); // Leállítjuk a figyelést, miután az animáció elindult
+                    }
+                });
+            }, {
+                threshold: 0.5 // Az elem legalább 50%-ban látható legyen, mielőtt elindítjuk az animációt
+            });
+
+            observer.observe(counter); // Megfigyeljük a counter elemet
+        });
+
+        // 15-ig - counter2
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const counter = document.querySelector('#counter2');
+            const target = +counter.getAttribute('data-target');
+            const duration = 5000; // Az animáció teljes hossza milliszekundumban
+            let start = null;
+
+            const step = (timestamp) => {
+                if (!start) start = timestamp;
+                const elapsed = timestamp - start;
+                const progress = Math.min(elapsed / duration, 1); // Biztosítjuk, hogy a progress sose lépje túl az 1-et
+                const easedProgress = easeInOutCubic(progress); // Alkalmazzuk az easing függvényt
+
+                counter.innerText = Math.floor(target * easedProgress);
+
+                if (elapsed < duration) {
+                    requestAnimationFrame(step);
+                } else {
+                    counter.innerText = target; // A végén pontosan beállítjuk a célszámot
+                    }
+            };
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        requestAnimationFrame(step);
+                        observer.disconnect(); // Leállítjuk a figyelést, miután az animáció elindult
+                    }
+                });
+            }, {
+                threshold: 0.5 // Az elem legalább 50%-ban látható legyen, mielőtt elindítjuk az animációt
+            });
+
+            observer.observe(counter); // Megfigyeljük a counter elemet
+        });
+
+        // 100-ig - counter3
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const counter = document.querySelector('#counter3');
+            const target = +counter.getAttribute('data-target');
+            const duration = 5000; // Az animáció teljes hossza milliszekundumban
+            let start = null;
+
+            const step = (timestamp) => {
+                if (!start) start = timestamp;
+                const elapsed = timestamp - start;
+                const progress = Math.min(elapsed / duration, 1); // Biztosítjuk, hogy a progress sose lépje túl az 1-et
+                const easedProgress = easeInOutCubic(progress); // Alkalmazzuk az easing függvényt
+
+                counter.innerText = Math.floor(target * easedProgress);
+
+                if (elapsed < duration) {
+                    requestAnimationFrame(step);
+                } else {
+                    counter.innerText = target; // A végén pontosan beállítjuk a célszámot
+                    setTimeout(() => {
+                        counter.innerText += "+";
+                    }, 1000);
+                }
+            };
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        requestAnimationFrame(step);
+                        observer.disconnect(); // Leállítjuk a figyelést, miután az animáció elindult
+                    }
+                });
+            }, {
+                threshold: 0.5 // Az elem legalább 50%-ban látható legyen, mielőtt elindítjuk az animációt
+            });
+
+            observer.observe(counter); // Megfigyeljük a counter elemet
+        });
+
+
+
+        // counter vége
+
+
+
+
+        // typing eleje
+
+        const phrases = ["Mit is foglal magában?", "Mit fogunk tanulni?", "Görgess lejjebb és megtudod"];
+        let currentPhrase = 0;
+        let letterCount = 0;
+        let typingDirection = 1; // 1 a gépelés, -1 a törlés
+        const typingSpeed = 80; // Gépelés sebessége milliszekundumban
+        const deleteSpeed = 60; // Törlés sebessége milliszekundumban
+        const pauseTime = 2000; // Szünet idő két szöveg között
+        const typingElement = document.getElementById('typing');
+
+        function type() {
+            setTimeout(() => {
+                // Ha a szöveg teljesen kitörölve van, szünet előtt nem aktualizáljuk a DOM-ot
+                if (!(typingDirection === -1 && letterCount === 0)) {
+                    typingElement.textContent = phrases[currentPhrase].slice(0, letterCount);
+                }
+                letterCount += typingDirection;
+
+                if (letterCount > phrases[currentPhrase].length) {
+                    // Várjon 2 másodpercet a törlés előtt
+                    typingDirection = -1;
+                    setTimeout(type, pauseTime); // Szünet után folytatja a törlést
+                } else if (letterCount <= 0) {
+                    // Váltson szöveget és kezdje újra a gépelést
+                    typingDirection = 1;
+                    currentPhrase = (currentPhrase + 1) % phrases.length;
+                    letterCount = 0; // Itt biztosítjuk, hogy a letterCount ne menjen negatívba
+                    setTimeout(type, 0); // Azonnal kezdje az új szöveget anélkül, hogy "felvillanna"
+                } else {
+                    type(); // Folytatja a gépelést vagy törlést az aktuális irányban
+                }
+            }, typingDirection === 1 ? typingSpeed : deleteSpeed);
+        }
+
+        type(); // Elindítja a gépelési folyamatot
+
+        // typing vége
+
+
+
     </script>
 </body>
 
